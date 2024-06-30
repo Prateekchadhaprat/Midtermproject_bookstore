@@ -43,7 +43,7 @@
 
 
 * ## Create sql queries for the above listed requirements.  They should be single queries.  Not a series of steps
-* Power writers (authors) with more than X books in the same genre published within the last X years
+###### Power writers (authors) with more than X books in the same genre published within the last X years
   ```SELECT u.name
         FROM Users u
         JOIN Books b ON u.id = b.author_id
