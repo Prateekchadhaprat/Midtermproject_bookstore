@@ -8,7 +8,7 @@ Manjot: Sql queries for Requirements and Db testing
 
 ```Tables and Attributes ``` 
 
-##Create a Typescript interface that will allow modification to a table.
+## Create a Typescript interface that will allow modification to a table.
 ```import { Client } from 'pg';
 
 export interface Book {
