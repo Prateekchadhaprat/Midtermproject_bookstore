@@ -43,14 +43,15 @@
 
 
 * ## Create sql queries for the above listed requirements.  They should be single queries.  Not a series of steps
-###### Power writers (authors) with more than X books in the same genre published within the last X years
-  ```SELECT u.name
-        FROM Users u
-        JOIN Books b ON u.id = b.author_id
-        WHERE b.genre_id = 4 AND b.publication_date > CURRENT_DATE - INTERVAL '5 years'
-        GROUP BY u.id
-        HAVING COUNT(b.id) > 8;```
 
+###### Power writers (authors) with more than X books in the same genre published within the last X years
+```sql
+SELECT u.name
+FROM Users u
+JOIN Books b ON u.id = b.author_id
+WHERE b.genre_id = 4 AND b.publication_date > CURRENT_DATE - INTERVAL '5 years'
+GROUP BY u.id
+HAVING COUNT(b.id) > 8;
 
 ###### Loyal Customers who has spent more than X dollars in the last year
   ```SELECT name, email
