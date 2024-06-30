@@ -13,6 +13,7 @@ Manjot: Sql queries for Requirements and Db testing
 
 ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
 
+###### Create
 ```CREATE TABLE public.books (
     id integer NOT NULL,
     title character varying(255) NOT NULL,
