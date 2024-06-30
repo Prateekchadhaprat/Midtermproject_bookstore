@@ -39,6 +39,9 @@ Manjot: Sql queries for Requirements and Db testing
 ###### Delete
 ```DELETE FROM Books WHERE id = 2;```
 
+
+## Create sql queries for the above listed requirements.  They should be single queries.  Not a series of steps
+
 ## Create a Typescript interface that will allow modification to a table.
 ###### Update Book
 ```import { Client } from 'pg';
