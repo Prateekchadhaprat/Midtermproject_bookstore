@@ -54,9 +54,10 @@ GROUP BY u.id
 HAVING COUNT(b.id) > 8;
 
 ###### Loyal Customers who has spent more than X dollars in the last year
-  ```SELECT name, email
-        FROM Users
-        WHERE total_spent > 5 AND user_type = 'Customer' AND join_date > CURRENT_DATE - INTERVAL '1 year';```
+```sql
+SELECT name, email
+FROM Users
+WHERE total_spent > 5 AND user_type = 'Customer' AND join_date > CURRENT_DATE - INTERVAL '1 year';
 
 ###### Well Reviewed books that has a better user rating than average
   ```SELECT title, average_rating
