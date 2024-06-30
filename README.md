@@ -50,7 +50,7 @@
         WHERE b.genre_id = 4 AND b.publication_date > CURRENT_DATE - INTERVAL '5 years'
         GROUP BY u.id
         HAVING COUNT(b.id) > 8;```
-
+  
 * Loyal Customers who has spent more than X dollars in the last year
   ```SELECT name, email
         FROM Users
@@ -62,10 +62,14 @@
     WHERE average_rating > (SELECT AVG(average_rating) FROM Books);```
 
 * The most popular genre by sales
-  ```SELECT g.name FROM Genre g JOIN Books b ON g.id = b.genre_id JOIN Orders o ON b.id = o.book_id GROUP BY g.id ORDER BY SUM(o.quantity * b.price) DESC LIMIT 1;```
+  ```SELECT g.name
+  FROM Genre g JOIN Books b ON g.id = b.genre_id JOIN Orders o ON b.id = o.book_id GROUP BY g.id
+  ORDER BY SUM(o.quantity * b.price) DESC LIMIT 1;```
 
 * The 10 most recent posted reviews by Customers 
-  ```SELECT u.name, b.title, r.rating, r.comment, r.review_date FROM Reviews r JOIN Users u ON r.customer_id = u.id JOIN Books b ON r.book_id = b.id ORDER BY r.review_date DESC LIMIT 10;```
+  ```SELECT u.name, b.title, r.rating, r.comment, r.review_date
+  FROM Reviews r JOIN Users u ON r.customer_id = u.id JOIN Books b ON r.book_id = b.id
+  ORDER BY r.review_date DESC LIMIT 10;```
 
 
 
