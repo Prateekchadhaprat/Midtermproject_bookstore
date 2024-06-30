@@ -24,16 +24,18 @@ Manjot: Sql queries for Requirements and Db testing
     book_format public.book_format NOT NULL,
     genre_id integer NOT NULL
 );```
-Create
+
+###### Insert
 ```INSERT INTO public.books OVERRIDING SYSTEM VALUE VALUES (1, 'The Women', '$19.99', 1, 14, '2024-06-19', 3.7, 'Physical', 1) ON CONFLICT DO NOTHING;```
-Read
+
+###### Read
 ```SELECT * FROM Books WHERE author_id = 1;```
 
-Update
+###### Update
 ```UPDATE Books SET price money = '19.99' WHERE id = 1;```
-Delete
+###### Delete
 ```DELETE FROM Books WHERE id = 2;```
-```
+
 ## Create a Typescript interface that will allow modification to a table.
 ###### Update Book
 ```import { Client } from 'pg';
