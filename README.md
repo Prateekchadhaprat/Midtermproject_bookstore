@@ -14,7 +14,7 @@ Manjot: Sql queries for Requirements and Db testing
 ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
 
 ###### Create
-```CREATE TABLE public.books (
+``CREATE TABLE public.books (
     id integer NOT NULL,
     title character varying(255) NOT NULL,
     price money,
@@ -24,7 +24,7 @@ Manjot: Sql queries for Requirements and Db testing
     user_rating double precision,
     book_format public.book_format NOT NULL,
     genre_id integer NOT NULL
-);```
+);``
 
 ###### Insert
 ```INSERT INTO public.books OVERRIDING SYSTEM VALUE VALUES (1, 'The Women', '$19.99', 1, 14, '2024-06-19', 3.7, 'Physical', 1) ON CONFLICT DO NOTHING;```
