@@ -6,6 +6,8 @@
 
 **Manjot: SQL queries for Requirements and DB Testing.**
 
+###### Github URL
+[MidtermprojectDB](https://github.com/Prateekchadhaprat/Midtermproject_bookstore/)
 
 * ## Clearly title and identify the tables required, the data you are capturing, and what type each of the attribute is
 ###### Tables and Attributes 
