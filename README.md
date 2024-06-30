@@ -8,6 +8,32 @@ Manjot: Sql queries for Requirements and Db testing
 
 ```Tables and Attributes ``` 
 
+
+
+
+## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
+
+```CREATE TABLE public.books (
+    id integer NOT NULL,
+    title character varying(255) NOT NULL,
+    price money,
+    author_id integer,
+    publisher_id integer,
+    publication_date date,
+    user_rating double precision,
+    book_format public.book_format NOT NULL,
+    genre_id integer NOT NULL
+);```
+Create
+```INSERT INTO public.books OVERRIDING SYSTEM VALUE VALUES (1, 'The Women', '$19.99', 1, 14, '2024-06-19', 3.7, 'Physical', 1) ON CONFLICT DO NOTHING;```
+Read
+```SELECT * FROM Books WHERE author_id = 1;```
+
+Update
+```UPDATE Books SET price money = '19.99' WHERE id = 1;```
+Delete
+```DELETE FROM Books WHERE id = 2;```
+```
 ## Create a Typescript interface that will allow modification to a table.
 ###### Update Book
 ```import { Client } from 'pg';
