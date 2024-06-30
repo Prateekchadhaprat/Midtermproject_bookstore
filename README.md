@@ -7,13 +7,13 @@
 **Manjot: SQL queries for Requirements and DB Testing.**
 
 
-## Clearly title and identify the tables required, the data you are capturing, and what type each of the attribute is
+* ## Clearly title and identify the tables required, the data you are capturing, and what type each of the attribute is
 ###### Tables and Attributes 
 
-## Submit a code block containing only valid sql syntax which will create your sample data base. 
+* ## Submit a code block containing only valid sql syntax which will create your sample data base. 
 
 
-## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
+* ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
 
 ###### Create
 ``CREATE TABLE public.books (
@@ -40,9 +40,9 @@
 ```DELETE FROM Books WHERE id = 2;```
 
 
-## Create sql queries for the above listed requirements.  They should be single queries.  Not a series of steps
+* ## Create sql queries for the above listed requirements.  They should be single queries.  Not a series of steps
 
-## Create a Typescript interface that will allow modification to a table.
+* ## Create a Typescript interface that will allow modification to a table.
 ###### Update Book
 ```import { Client } from 'pg';
 
