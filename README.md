@@ -1,10 +1,10 @@
-Group Members Duties
+###### Group Members Duties
 
-Prateek: TypeScript interface for table modification and CRUD operations.
+**Prateek 8967796: TypeScript interface for table modification and CRUD operations.**
 
-Khushboo: Database schema design, creation of tables, and initial data insertion.
+**Khushboo: Database schema design, creation of tables, and initial data insertion.**
 
-Manjot: Sql queries for Requirements and Db testing
+**Manjot: SQL queries for Requirements and DB Testing.**
 
 
 ## Clearly title and identify the tables required, the data you are capturing, and what type each of the attribute is
