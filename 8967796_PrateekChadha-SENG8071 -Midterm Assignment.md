@@ -13,7 +13,18 @@
 ###### Tables and Attributes 
 
 * ## Submit a code block containing only valid sql syntax which will create your sample data base. 
-
+Books
+| Field Name  | Type | Is Primary Key 
+| --------- | ------- | ------- | 
+| Id |  integer | Yes
+| title | character varying(255) |
+| price | numeric(10,0)  |
+| author_id | integer |
+| publisher_id | integer |
+| publication_date | date |
+| user_rating  | numeric(1,0) |
+ | book_format | ENUM ( Physical','E-book','Audiobook') |
+ | genre_id | integer |
 
 * ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
 
