@@ -37,11 +37,11 @@ Books
 | --------- | ------- | ------- | 
 | Id |  integer | PRIMARY KEY
 | title | character varying(255) | -
-| price | numeric(10,0)  | -
+| price | money  | -
 | author_id | integer | FOREIGN KEY
 | publisher_id | integer | FOREIGN KEY
 | publication_date | date | -
-| user_rating  | numeric(1,0) | -
+| user_rating  | double precision | -
 | book_format | ENUM ( Physical','E-book','Audiobook') | -
 | genre_id | integer | FOREIGN KEY
 
@@ -53,9 +53,9 @@ Orders
 | customer_id | integer | FOREIGN KEY
 | book_id | integer | FOREIGN KEY
 | order_date | date | -
-| price | numeric(10,0) | -
+| price | money | -
 | quantity | numeric(10,0) | -
-| total_amount  | numeric(10,0) | -
+| total_amount  | money | -
 
 Reviews
 
@@ -65,7 +65,7 @@ Reviews
 | customer_id | integer | FOREIGN KEY
 | book_id | integer | FOREIGN KEY
 | comment | text | -
-| rating | numeric(1,0) | -
+| rating | double precision | -
 | posted_date | date | -
 
 * ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
