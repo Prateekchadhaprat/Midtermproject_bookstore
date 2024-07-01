@@ -12,7 +12,6 @@
 * ## Clearly title and identify the tables required, the data you are capturing, and what type each of the attribute is
 ###### Tables and Attributes 
 
-* ## Submit a code block containing only valid sql syntax which will create your sample data base.
 Users
 
 | Field Name  | Type | Key Type 
@@ -67,6 +66,9 @@ Reviews
 | comment | text | -
 | rating | double precision | -
 | posted_date | date | -
+
+* ## Submit a code block containing only valid sql syntax which will create your sample data base.
+
 
 * ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
 
