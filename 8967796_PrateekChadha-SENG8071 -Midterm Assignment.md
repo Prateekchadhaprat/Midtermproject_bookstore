@@ -12,19 +12,61 @@
 * ## Clearly title and identify the tables required, the data you are capturing, and what type each of the attribute is
 ###### Tables and Attributes 
 
-* ## Submit a code block containing only valid sql syntax which will create your sample data base. 
-Books
-| Field Name  | Type | Is Primary Key 
+* ## Submit a code block containing only valid sql syntax which will create your sample data base.
+Users
+
+| Field Name  | Type | Key Type 
 | --------- | ------- | ------- | 
-| Id |  integer | Yes
-| title | character varying(255) |
-| price | numeric(10,0)  |
-| author_id | integer |
-| publisher_id | integer |
-| publication_date | date |
-| user_rating  | numeric(1,0) |
- | book_format | ENUM ( Physical','E-book','Audiobook') |
- | genre_id | integer |
+| Id |  integer | PRIMARY KEY
+| name | character varying(255) | -
+| email | character varying(255) | -
+| password | character varying(255) | -
+| type | ENUM ( Customer','Author','Publisher') | -
+| created_at | date | -
+
+Genre
+
+| Field Name  | Type | Key Type 
+| --------- | ------- | ------- | 
+| Id |  integer | PRIMARY KEY
+| title | character varying(255) | -
+
+Books
+
+| Field Name  | Type | Key Type 
+| --------- | ------- | ------- | 
+| Id |  integer | PRIMARY KEY
+| title | character varying(255) | -
+| price | numeric(10,0)  | -
+| author_id | integer | FOREIGN KEY
+| publisher_id | integer | FOREIGN KEY
+| publication_date | date | -
+| user_rating  | numeric(1,0) | -
+| book_format | ENUM ( Physical','E-book','Audiobook') | -
+| genre_id | integer | FOREIGN KEY
+
+Orders
+
+| Field Name  | Type | Key Type 
+| --------- | ------- | ------- | 
+| Id |  integer | PRIMARY KEY
+| customer_id | integer | FOREIGN KEY
+| book_id | integer | FOREIGN KEY
+| order_date | date | -
+| price | numeric(10,0) | -
+| quantity | numeric(10,0) | -
+| total_amount  | numeric(10,0) | -
+
+Reviews
+
+| Field Name  | Type | Key Type
+| --------- | ------- | ------- | 
+| Id |  integer | PRIMARY KEY
+| customer_id | integer | FOREIGN KEY
+| book_id | integer | FOREIGN KEY
+| comment | text | -
+| rating | numeric(1,0) | -
+| posted_date | date | -
 
 * ## Clearly Identify 1 complete set of DDL/DML For one of the tables *Books* you should be able to perform CRUD on all the values of the table
 
