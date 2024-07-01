@@ -68,7 +68,7 @@ Reviews
 | posted_date | date | -
 
 * ## Submit a code block containing only valid sql syntax which will create your sample data base.
-    ** PostgreSQL does not permit direct access to the PSQL Tool for querying; therefore, it is necessary to first create a database before executing queries. If creating the database programmatically is required, the following query can be used for database creation.
+    **NOTE**: PostgreSQL does not permit direct access to the PSQL Tool for querying; therefore, it is necessary to first create a database before executing queries. If creating the database programmatically is required, the following query can be used for database creation.
 
     ```sql
     DROP DATABASE IF EXISTS book_store;
