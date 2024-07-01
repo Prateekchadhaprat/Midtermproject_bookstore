@@ -2,7 +2,7 @@
 
 **Prateek 8967796: TypeScript interface for table modification and CRUD operations.**
 
-**Khushboo: Database schema design, creation of tables, and initial data insertion.**
+**Khushboo 8894310: Database schema design, creation of tables, and initial data insertion.**
 
 **Manjot: SQL queries for Requirements and DB Testing.**
 
